@@ -9,7 +9,7 @@ using namespace std;
 функция, которая возвращает число фон Неймана длины х,
 используя начальное число А
 */
-unsigned int fonNeyman(unsigned int x){
+double fonNeyman(unsigned int x){
     if(x < 8){
         // seed
         static double A = 8691454516;
@@ -44,7 +44,7 @@ unsigned int fonNeyman(unsigned int x){
     
 
         // return final randomized value
-        return stoi(num);
+        return stod(num);
     }
 
 
